@@ -35,3 +35,10 @@
 // 
 //
 //
+--------------- Output ------------
+BFS traversal of the tree:
+node.value: 1 
+node.value: 2 
+node.value: 3 
+node.value: 4 
+node.value: 5 
