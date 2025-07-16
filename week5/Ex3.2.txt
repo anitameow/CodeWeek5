@@ -1,4 +1,4 @@
-// 文件：BinaryTree.java
+// 文件：BinaryTree.java(DFS)
 // 创建类 Ex3BinaryTree
 // 创建变量root
 // 空行，Preorder traversal

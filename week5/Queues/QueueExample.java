@@ -1,4 +1,4 @@
-// Ex2
+// Ex1
 import java.util.LinkedList;
 import java.util.Queue;
 public class QueueExample {
