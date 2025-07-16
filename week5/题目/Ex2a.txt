@@ -1,0 +1,11 @@
+// 文件名：TreeNode.java (BFS)
+// 创建类TreeNode
+// 创建整数变量value
+// 创建left
+// 创建right
+// Constructor，不用public，参数value
+//
+//
+//
+//
+//
