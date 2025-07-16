@@ -1,0 +1,79 @@
+// 文件名：StackArray.java
+// 导入Arrays包
+// 创建类StackArray
+// 创建变量整数数组stack
+// 创建整数变量top
+// 创建整数变量capacity
+// 空行，constructor to initialize the stack
+// Constructorr，数整数size
+// stack赋值
+// cpacity赋值
+// top赋值
+//
+// 空行，method to add an element to the stack
+// 创建方法push(), 参数整数value，从上面增加元素
+// 如果是满的（用自定义方法isFull)
+// 粘贴： System.out.println("Stack is full");
+// 退出
+// 
+// top数更新
+// top值更新
+//
+// 空行，method to remove an element from the stack
+// 创建方法pop(), 删除返回最上面的元素
+// 如果是空的 （用自定义方法isEmpty)
+// 粘贴：System.out.println("Stack is empty");
+// 返回 -1
+//
+// 创建变量temp 存top
+// top数减1
+// 返回删掉的top值
+//
+// 空行， method to check the top element of the stack
+// 创建方法peek(), 返回最上面的元素
+// 如果是空的
+// 粘贴：System.out.println("Stack is empty");
+// 返回 -1
+//
+// 返回最上面元素值
+//
+// 空行，method to check if the stack is empty
+// 创建方法isEmpty() 
+// （Hint：如果top是-1返回true）
+//
+// 空行，method to check if the stack is full
+// 创建方法isFull()
+// (Hint: 如果top数量达到capcity-1就满了)
+//
+粘贴：// print the stack
+    public void printStack(){
+        System.out.println(Arrays.toString(this.stack));
+    }
+// 主方法
+// 创建类变量，名为stack, 大小5
+// 加入10
+// 加入20
+// 加入30
+// 加入40
+// 加入50
+// 打印"Top element is: 最上面的元素" 
+// ----------- 空行 -----------
+// 粘贴：System.out.println("Elements popped from stack:");
+// 当stack不是空的
+// 删除打印最上面的元素，下面粘贴：
+            //stack.printStack();//打印看了，没有区别，pop是修改了指针top，并没有清除数组里的值。
+        }
+        // 现在是“空的” [10, 20, 30, 40, 50]
+        stack.push(999); // [999, 20, 30, 40, 50]
+        stack.printStack(); 
+    }
+}
+------------- Output ------------
+Top element is: 50
+Elements popped from stack:
+50
+40
+30
+20
+10
+[999, 20, 30, 40, 50]
