@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class StackArray {
     private int[] stack;
     private int top;
@@ -49,6 +51,11 @@ public class StackArray {
     public boolean isFull() {
         return top == capacity - 1;
     }
+    
+    // print the stack
+    public void printStack(){
+        System.out.println(Arrays.toString(this.stack));
+    }
 
     public static void main(String[] args) {
         StackArray stack = new StackArray(5);
@@ -61,9 +68,15 @@ public class StackArray {
 
         System.out.println("Top element is: " + stack.peek());
 
+        stack.printStack();
+
         System.out.println("Elements popped from stack:");
         while (!stack.isEmpty()) {
             System.out.println(stack.pop());
+            stack.printStack();//打印看了，没有区别，pop是修改了指针top，并没有清除数组里的值。
         }
+        // 现在是“空的” [10, 20, 30, 40, 50]
+        stack.push(999); // [999, 20, 30, 40, 50]
+        stack.printStack(); 
     }
 }
