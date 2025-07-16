@@ -1,4 +1,4 @@
-// Ex3
+// Ex3b
 public class BinaryTree {
     TreeNode root;
     // Preorder traversal (NLR)

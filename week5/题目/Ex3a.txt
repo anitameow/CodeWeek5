@@ -1,0 +1,10 @@
+// 文件：TreeNode.java (DFS)
+// 创建类 TreeNode
+// 创建整数value
+// 创建类变量 left, right
+// ----------- 空行 -----------
+// constructor, (不用public)
+// value赋值
+// left&right赋值
+//
+//
