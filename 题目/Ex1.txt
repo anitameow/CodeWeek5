@@ -1,4 +1,4 @@
-// 文件名：QueueExample.java
+// 文件名：QueueExample.java. 我试一下ipad
 // 导入linkedlist包
 // 导入Queue包
 // 创建class QueueExample
