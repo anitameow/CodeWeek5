@@ -1,0 +1,31 @@
+// 文件名：QueueExample.java
+// 导入linkedlist包
+// 导入Queue包
+// 创建class Ex2QueueExample
+// 创建主方法
+// 空行, create a queue using LinkedList
+// 创建一个Quene，整数，名为queue
+// 空行，enqueue elements
+// 加入元素1，2，3
+//
+//
+// 空行，看第一个（peek at the front element)
+// 打印"Front of the queue: 第一个" 
+// 空行，dequeue elements
+// 打印 "Removed from the queue: 最后一个"
+// 打印 "Removed from the queue: 最后一个"
+// 空行，check if the queue is empty
+// 如果是空的，粘贴：System.out.println("The queue is empty.");
+// 如果不是空的，粘贴：System.out.println("The queue is not empty.");
+// 空行
+// 加入元素4
+// 空行 dequeue the remaining elements
+//
+//
+---------------Output----------------
+Front of the queue: 1
+Removed from the queue: 1
+Removed from the queue: 2
+The queue is not empty.
+Removed from the queue: 3
+Removed from the queue: 4

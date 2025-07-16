@@ -1,0 +1,55 @@
+// 文件：BinaryTree.java
+// 创建类 Ex3BinaryTree
+// 创建变量root
+// 空行，Preorder traversal
+//
+//
+//
+//
+//
+//
+//
+//
+// 空行，Inorder traversal
+// 
+//
+//
+//
+//
+//
+//
+//
+// 空行，Postorder traversal
+//
+//
+//
+//
+//
+//
+//
+//
+// 主方法
+// 创建变量tree
+// 依次加入node
+// 按照BFS顺序是：1 2 3 4 5
+//
+//
+//
+// 空行，perform Preorder traversal
+// 粘贴： System.out.print("Preorder traversal: ");
+// 
+// 打印空行
+// 空行，perform Inorder traversal
+// 粘贴：System.out.print("Inorder traversal: ");
+// 
+// 打印空行
+// 空行，perform Postorder traversal
+// 粘贴：System.out.print("Postorder traversal: ");
+// 
+// 打印空行
+//
+//
+------------------- Output ------------------
+Preorder traversal: 1 2 4 5 3 
+Inorder traversal: 4 2 5 1 3 
+Postorder traversal: 4 5 2 3 1 
