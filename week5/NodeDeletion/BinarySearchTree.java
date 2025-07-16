@@ -1,46 +1,41 @@
+// Ex4
 import java.util.LinkedList;
 import java.util.Queue;
 
-
 public class BinarySearchTree {
     TreeNode root;
-
     // method to insert a new node with a given value
     public void insert(int value) {
-        root = insertRec(root, value);
+        root = insertRec(root, value); //调用自定义插入来插入，递归中根会变成子根，结束最终返回总根
     }
-
+    
     // recursive function to insert a new value in the BST
     private TreeNode insertRec(TreeNode root, int value) {
-        // if the tree is empty, return a new node
-        if (root == null) {
-            root = new TreeNode(value);
-            return root;
+        // if the tree is empty, return a new node，
+        if (root == null) { //如果是null
+            root = new TreeNode(value); // 就插入
+            return root; //返回总根
         }
-
-        // otherwise, recur down the tree
-        if (value < root.value) {
-            root.left = insertRec(root.left, value);
-        } else if (value > root.value) {
-            root.right = insertRec(root.right, value);
+        // otherwise, recur down the tree，这里在递归
+        if (value < root.value) { //小
+            root.left = insertRec(root.left, value);//左
+        } else if (value > root.value) {//大
+            root.right = insertRec(root.right, value);//右
         }
-
         // return the (unchanged) node pointer
-        return root;
+        return root;//返回总根
     }
 
     // method to remove a node with a given value
     public void remove(int value) {
-        root = removeRec(root, value);
+        root = removeRec(root, value); //调用自定义删除来删除
     }
-
     // recursive function to remove a value in the BST
     private TreeNode removeRec(TreeNode root, int value) {
         // if the tree is empty, return null
         if (root == null) {
             return root;
         }
-
         // otherwise, recur down the tree
         if (value < root.value) {
             root.left = removeRec(root.left, value);
@@ -53,14 +48,11 @@ public class BinarySearchTree {
             } else if (root.right == null) {
                 return root.left;
             }
-
             // node with two children: Get the inorder predecessor (largest in the left subtree)
             root.value = maxValue(root.left);
-
             // delete the inorder predecessor
             root.left = removeRec(root.left, root.value);
         }
-
         return root;
     }
 
@@ -77,19 +69,16 @@ public class BinarySearchTree {
     // method for BFS traversal
     void bfsTraversal() {
         if (root == null) return; // if the tree is empty, return
-
+        
         Queue<TreeNode> queue = new LinkedList<>(); // initialize the queue
         queue.add(root); // enqueue the root node
-
         while (!queue.isEmpty()) { // process the queue until it's empty
             TreeNode node = queue.poll(); // dequeue a node from the front
             System.out.print(node.value + " "); // process the node (print its value)
-
             // enqueue the left child if it exists
             if (node.left != null) {
                 queue.add(node.left);
             }
-
             // enqueue the right child if it exists
             if (node.right != null) {
                 queue.add(node.right);
@@ -99,7 +88,7 @@ public class BinarySearchTree {
 
     public static void main(String[] args) {
         BinarySearchTree bst = new BinarySearchTree();
-
+        
         // inserting elements into the BST
         bst.insert(11);
         bst.insert(6);
