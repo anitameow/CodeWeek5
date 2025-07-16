@@ -24,3 +24,16 @@
 //
 //
 // ----------- 空行 -----------
+// 主方法
+// 空行，create a binary tree and add some nodes
+// 创建类变量，名为tree，依Breadth-First Search(BFS)顺序加入下列节点
+//        1
+//       / \
+//      2   3
+//     / \
+//    4   5
+// 空行，perform BFS traversal
+// 粘贴：System.out.println("BFS traversal of the tree:");
+// 
+//
+//
