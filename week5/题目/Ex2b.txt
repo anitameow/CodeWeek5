@@ -1,0 +1,26 @@
+// 文件名：BinaryTree.java (BFS)
+// 导入linkedlist
+// 导入Queue
+// ----------- 空行 -----------
+// 创建类 BinaryTree
+// 创建变量root
+// 创建不返回方法bfsTraversal() （略public）
+// 如果树是空的，退出
+// 创建Queuelinkedlist，名为queue, 类型是TreeNode子类型是LinkedList
+// 排列里加入根
+// 当queue不是空的
+// 创建变量名为node, 类型TreeNode，删除第一个返回那个指
+// 粘贴：System.out.println("node.value: " + node.value + " "); 
+// 空行，enqueue the left child if it exists
+// 如果左边不是空的，排列里加入左边
+//
+// 粘贴：System.out.println("node.left:" + node.left.value);
+//
+// 空行，enqueue the right child if it exists
+// 如果右边不是空的，排列里加入右边
+//
+// 粘贴：System.out.println("node.left:" + node.right.value);
+//
+//
+//
+// ----------- 空行 -----------
