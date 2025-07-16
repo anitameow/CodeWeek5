@@ -1,7 +1,7 @@
 // 文件名：QueueExample.java
 // 导入linkedlist包
 // 导入Queue包
-// 创建class Ex2QueueExample
+// 创建class QueueExample
 // 创建主方法
 // 空行, create a queue using LinkedList
 // 创建一个Quene，整数，名为queue
