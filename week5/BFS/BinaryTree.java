@@ -42,5 +42,6 @@ public class BinaryTree {
         // perform BFS traversal
         System.out.println("BFS traversal of the tree:");
         tree.bfsTraversal();
+        System.out.println("ipad yeah~"); 
     }
 }
