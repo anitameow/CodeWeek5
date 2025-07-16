@@ -1,0 +1,118 @@
+// 文件名：BinarySearchTree.java
+// 导入linkedlist
+// 导入Queue
+// ----------- 空行 -----------
+// 创建类BinarySearchTree
+// 创建根变量root
+// ----------- 空行 -----------
+// 创建方法insert(int value)，调用下面自定义方法来递归插入
+//
+//
+// ----------- 空行 -----------
+// 空行，创建私有方法inserTrec(),返回root(类型是？），参数root, 整数vlaue
+//
+// 空行，如果是空的，插入，返回总根（新node）
+//
+//
+//
+//
+// 空行，否则在这里递归
+// 如果小
+// 左
+// 如果大（用else if)
+// 右
+//
+// 空行
+// 返回总根
+//
+// ----------- 空行 -----------
+// 空行，method to remove a node with a given value
+// 创建方法remove(int vlaue)，调用下面自定义方法来删除
+//
+//
+// 空行，recursive function to remove a value in the BST
+// 创建私有方法removeRec()，参数根和整数value
+// 空行，如果空的，返回总根(null)
+//
+//
+//
+// 如果小
+// 左移
+// 如果大（else if）
+// 右移
+// 否则
+// 空行，node with only one child or no child
+    // 如果左变空
+    // 返回右边
+    // 如果右边空
+    // 返回左边
+    // 
+    //
+    // 空行，node with two children: Get the inorder predecessor (largest in the left subtree)
+    // 提取左子树中最大值（inorder predecessor）来替换当前节点的值
+    // 空行，
+    // 接着去左子树里删掉“原来的那个最大值”，否则树里会有两个一样的值
+//
+// 返回根
+//
+// ----------- 空行 -----------
+// 空行，method to find the maximum value in a given tree
+// 创建私有方法maxvalue(TreeNode root), 返回当前树的最大值（要删的值左边作为根）
+// 创建整数变量名为maxValue, 赋根值
+// 当右边不是空的
+// maxValue是右边的值
+// 右移
+//
+// 返回maxValue
+//
+// ----------- 空行 -----------
+// 空行，method for BFS traversal
+// 创建bfsTraversal()
+// 如果是空树，退出
+// 创建排列名为queue
+// ----------- 空行 -----------
+// queue里加入根
+// 当排列不是空的
+// 删除第一个（dequeue a node from the front），删除赋给节点node
+// 打印节点值
+// 空行， enqueue the left child if it exists
+// 如果节点左边不是空的，加入节点左边
+// 
+//
+// 空行， enqueue the right child if it exists
+// 如果节点右边不是空的。加入节点右边
+//
+//
+//
+//
+// ----------- 空行 -----------
+// 主方法
+// 创建类变量bst
+// ----------- 空行 -----------
+// 空行，插入元素
+//11
+//6
+//8
+//19
+//4
+//10
+//5
+//17
+//43
+//49
+//31
+// ----------- 空行 -----------
+// 空行，print BFS traversal of the BST
+// 粘贴：System.out.print("BFS traversal of the BST: ");
+// 执行bfs遍历
+// 打印换行
+// ----------- 空行 -----------
+// 空行，removing an element from the BST
+// 删除11
+// ----------- 空行 -----------
+// 空行
+// 粘贴：System.out.print("BFS traversal of the BST after removal: ");
+// 执行bfs遍历
+------------------------ Output ------------------------
+BFS traversal of the BST: 11 6 19 4 8 17 43 5 10 31 49 
+BFS traversal of the BST after removal: 10 6 19 4 8 17 43 5 31 49 
